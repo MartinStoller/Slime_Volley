@@ -17,8 +17,6 @@ class Player:
                             int((self.coordinate_queue[0][1] - self.coordinate_queue[2][1]) / 2)]
         self.player_img = pygame.image.load(helper_functions.get_img_loc(self.img_name))
         self.player_img.convert()
-        self.sprites1 = []
-        self.sprites1.append(pygame.image.load())
 
     def render(self):
         self.GUI.SCREEN.blit(self.player_img, pygame.rect.Rect(self.coordinates[0], self.coordinates[1], 70, 100))
@@ -38,4 +36,3 @@ class Player:
         self.coordinate_queue.pop()
         self.velocity = [int((self.coordinate_queue[0][0] - self.coordinate_queue[2][0]) / 2),
                          int((self.coordinate_queue[0][1] - self.coordinate_queue[2][1]) / 2)]
-
