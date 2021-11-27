@@ -6,6 +6,8 @@ Simply execute main.py to play the game. You can also download my game from here
 Simply extract the folder after the download, run the .exe file and enjoy a nice round of 2 Jellos playing Volleyball against each other ;)
 Player one is controlled with the W/A/D keys and player 2 is controlled by the arrow keys.
 
+This will be part of a bigger Project of mine were I will use different learning techniques for A.I to learn the game and the let the A.I.´s compete against each other to see which learning techniques yield the best results.
+
 
 The original game can be found here: http://blobbyvolley.de/
 
