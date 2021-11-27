@@ -1,6 +1,8 @@
 # slime_volley
 
+I tried to copy the game "Blobby Volley 2" in Python. I think the result got quite close to the original :)
 
-TODO: 
-- create game, 
-- train Genetic A.I. + Q-Learning A.I. + supervised A.I (NN) + supervised A.I (Linear)
+Simply execute main.py to play the game.
+
+
+The original game can be found here: http://blobbyvolley.de/
