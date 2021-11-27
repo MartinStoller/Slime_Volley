@@ -78,17 +78,17 @@ class GUI:
                 # player controls:
                 keys = pygame.key.get_pressed()
                 if keys[pygame.K_LEFT] and player2.coordinates[0] > 610:
-                    player2.coordinates[0] -= 8
+                    player2.move_left()
                 if keys[pygame.K_RIGHT] and player2.coordinates[0] < 1118:
-                    player2.coordinates[0] += 8
+                    player2.move_right()
                 if keys[pygame.K_d] and player1.coordinates[0] < 510:
-                    player1.coordinates[0] += 8
+                    player1.move_right()
                 if keys[pygame.K_a] and player1.coordinates[0] > 0:
-                    player1.coordinates[0] -= 8
+                    player1.move_left()
                 if keys[pygame.K_w]:
-                    player1.jump = True
+                    player1.start_jump()
                 if keys[pygame.K_UP]:
-                    player2.jump = True
+                    player2.start_jump()
                 player1.jumps()
                 player2.jumps()
 

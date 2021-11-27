@@ -21,6 +21,10 @@ class Player:
     def render(self):
         self.GUI.SCREEN.blit(self.player_img, pygame.rect.Rect(self.coordinates[0], self.coordinates[1], 70, 100))
 
+
+    def start_jump(self):
+        self.jump = True
+
     def jumps(self):
         if self.jump is True:
             self.coordinates[1] -= self.current_jump_speed
@@ -36,3 +40,9 @@ class Player:
         self.coordinate_queue.pop()
         self.velocity = [int((self.coordinate_queue[0][0] - self.coordinate_queue[2][0]) / 2),
                          int((self.coordinate_queue[0][1] - self.coordinate_queue[2][1]) / 2)]
+
+    def move_right(self):
+        self.coordinates[0] += 8
+
+    def move_left(self):
+        self.coordinates[0] -= 8
