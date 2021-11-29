@@ -21,7 +21,6 @@ class Player:
     def render(self):
         self.GUI.SCREEN.blit(self.player_img, pygame.rect.Rect(self.coordinates[0], self.coordinates[1], 70, 100))
 
-
     def start_jump(self):
         self.jump = True
 

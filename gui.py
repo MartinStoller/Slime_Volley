@@ -97,7 +97,7 @@ class GUI:
                 current_game.running = False
                 countdown += 1
                 if countdown >= 100:
-                    if volleyball.coordinates[0] + 11 < 598:
+                    if volleyball.coordinates[0] + 38 < 599:
                         scorer = 2
                     else:
                         scorer = 1
